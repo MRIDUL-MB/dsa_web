@@ -24,6 +24,7 @@ export default function QAcards() {
                 className='position-absolute link'
                 href={item.link}
                 target='_blank'
+                rel="noreferrer"
               >
                 <i className='fa-solid fa-arrow-up-right-from-square'></i>
               </a>
