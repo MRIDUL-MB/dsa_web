@@ -2,7 +2,7 @@ import QAcards from './components/QAcards';
 
 function App() {
   return (
-    <div>
+    <div className='container'>
       <QAcards />
     </div>
   );

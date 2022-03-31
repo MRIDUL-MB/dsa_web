@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide {
+    font-weight: 100;
+    outline: 1px solid rgb(50, 72, 145);
+    color: rgb(50, 72, 145);
+}
+
+.badge {
+    right: 6rem;
+}
+
+.link {
+    right: 4rem;
+    z-index: 101;
+}
+
+@media screen and (max-width: 600px) {
+    .hide {
+        display: none;
+
+    }
+
+}
