@@ -64,24 +64,32 @@ public:
   },
   {
     id: 2,
-    topic: 'array',
-    question: 'Two Sum',
-    link: 'https://leetcode.com/problems/two-sum/',
+    topic: 'Bit manipulation',
+    question: 'Power of Two',
+    link: 'https://leetcode.com/problems/power-of-two/',
     sol: `class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        int n = nums.size();
-        for(int i=0; i<n-1;i++)
-        {
-            for(int j=i+1; j<n; j++){
-                if(nums[i]+nums[j]==target){
-                    return {i,j};
-                }
+        public:
+            bool isPowerOfTwo(int n) {
+                if(n<=0) return false;
+                if(n&n-1)
+                    return false;
+                return true;
             }
-        }
-        return {};
-        
-    }
-};`,
+        };`,
+  },
+  {
+    id: 3,
+    topic: 'Bit manipulation',
+    question: 'Power of Two',
+    link: 'https://leetcode.com/problems/power-of-two/',
+    sol: `class Solution {
+        public:
+            bool isPowerOfTwo(int n) {
+                if(n<=0) return false;
+                if(n&n-1)
+                    return false;
+                return true;
+            }
+        };`,
   },
 ];
