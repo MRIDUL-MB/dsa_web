@@ -79,16 +79,23 @@ public:
   },
   {
     id: 3,
-    topic: 'Bit manipulation',
-    question: 'Power of Two',
-    link: 'https://leetcode.com/problems/power-of-two/',
+    topic: ['Bit manipulation','April leetcode challange 1'],
+    question: 'Reverse String',
+    link: 'https://leetcode.com/problems/reverse-string/',
     sol: `class Solution {
         public:
-            bool isPowerOfTwo(int n) {
-                if(n<=0) return false;
-                if(n&n-1)
-                    return false;
-                return true;
+            void reverseString(vector<char>& arr) {
+                int s=0;
+                int e=arr.size()-1;
+                char temp;
+                while(s<=e){
+                    temp=arr[s];
+                    arr[s]=arr[e];
+                    arr[e]=temp;
+                    temp='\0';
+                    s++;
+                    e--;
+                }
             }
         };`,
   },
