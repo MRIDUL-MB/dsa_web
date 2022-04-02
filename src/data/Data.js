@@ -79,7 +79,7 @@ public:
   },
   {
     id: 3,
-    topic: ['Bit manipulation','April leetcode challange 1'],
+    topic: 'Bit manipulation, April leetcode challange 1',
     question: 'Reverse String',
     link: 'https://leetcode.com/problems/reverse-string/',
     sol: `class Solution {
