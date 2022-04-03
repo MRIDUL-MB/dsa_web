@@ -151,7 +151,7 @@ public:
                 vector<int> temp={};
                 vector<vector<int>> res;
                 subs(0,nums,res,temp);
-                return res;
+                return res; 
             }
         };`,
   },
