@@ -20,11 +20,12 @@ export default function QAcards() {
               <span className='badge bg-info position-absolute'>
                 {item.topic}
               </span>
+
               <a
                 className='position-absolute link'
                 href={item.link}
                 target='_blank'
-                rel="noreferrer"
+                rel='noreferrer'
               >
                 <i className='fa-solid fa-arrow-up-right-from-square'></i>
               </a>
