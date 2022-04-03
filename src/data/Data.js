@@ -99,4 +99,60 @@ public:
             }
         };`,
   },
+  {
+    id: 4,
+    topic: ['Two pointer','April leetcode challange 2'],
+    question: 'Valid Palindrome II',
+    link: 'https://leetcode.com/problems/valid-palindrome-ii/',
+    sol: `class Solution {
+        public:
+            bool ispalindrome(string st,int s,int e){
+                while(s<e){
+                    if(st[s]!=st[e])
+                        return false;
+                    s++;
+                    e--;
+                }
+                return true;
+            }
+            bool validPalindrome(string st) {
+                int s=0;
+                int e=st.size()-1;
+                while(s<=e){
+                    
+                    if(st[s]!=st[e]){
+                       return ispalindrome(st,s,e-1) || ispalindrome(st,s+1,e);
+                    }
+                 else{
+                     s++;
+                     e--;
+                 }   
+                }
+                return true;
+            }
+        };`,
+  },
+  {
+    id: 5,
+    topic: ['Backtracking'],
+    question: 'Subsets',
+    link: 'https://leetcode.com/problems/subsets/',
+    sol: `class Solution {
+        public:
+            void subs(int start,vector<int> nums,vector<vector<int>> &res,vector<int> &temp){
+                res.push_back(temp);
+                for(int i=start;i<nums.size();i++){
+                    temp.push_back(nums[i]);
+                    subs(i+1,nums,res,temp);
+                    temp.pop_back();
+                }
+            }
+            vector<vector<int>> subsets(vector<int>& nums) {
+                vector<int> temp={};
+                vector<vector<int>> res;
+                subs(0,nums,res,temp);
+                return res; 
+            }
+        };`,
+  },
 ];
