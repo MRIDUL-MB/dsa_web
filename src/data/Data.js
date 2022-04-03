@@ -1,7 +1,7 @@
 export const Data = [
   {
     id: 0,
-    topic: 'array',
+    topic: ['array'],
     question: 'Two Sum',
     link: 'https://leetcode.com/problems/two-sum/',
     sol: `class Solution {
@@ -23,7 +23,7 @@ public:
   },
   {
     id: 1,
-    topic: 'array',
+    topic: ['array'],
     question: 'Spiral Matrix',
     link: 'https://leetcode.com/problems/spiral-matrix/',
     sol: `class Solution {
@@ -64,7 +64,7 @@ public:
   },
   {
     id: 2,
-    topic: 'Bit manipulation',
+    topic: ['Bit manipulation'],
     question: 'Power of Two',
     link: 'https://leetcode.com/problems/power-of-two/',
     sol: `class Solution {
@@ -79,7 +79,7 @@ public:
   },
   {
     id: 3,
-    topic: 'Bit manipulation, April leetcode challange 1',
+    topic: ['Bit manipulation, April leetcode challange 1'],
     question: 'Reverse String',
     link: 'https://leetcode.com/problems/reverse-string/',
     sol: `class Solution {
@@ -101,7 +101,7 @@ public:
   },
   {
     id: 4,
-    topic: ['Two pointer','April leetcode challange 2'],
+    topic: ['Two pointer', 'April leetcode challange 2'],
     question: 'Valid Palindrome II',
     link: 'https://leetcode.com/problems/valid-palindrome-ii/',
     sol: `class Solution {

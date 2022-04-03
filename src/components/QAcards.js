@@ -1,9 +1,8 @@
+import { useState } from 'react';
 import { Accordion } from 'react-bootstrap';
 import LiveToast from './LiveToast';
-import { Data } from '../data/Data';
-import { useState } from 'react';
 
-export default function QAcards() {
+export default function QAcards({ data }) {
   const [show, setShow] = useState(false);
 
   const copy = (item) => {
@@ -12,11 +11,11 @@ export default function QAcards() {
   };
   return (
     <Accordion defaultActiveKey={['0']} alwaysOpen>
-      {Data.map((item) => {
+      {data.map((item, index) => {
         return (
           <Accordion.Item eventKey={item.id} key={item.id}>
-            <Accordion.Header>
-              {`${item.id + 1} ${item.question}`}
+            <Accordion.Header className='qa-card'>
+              {`${index + 1} ${item.question}`}
               <span className='badge bg-info position-absolute'>
                 {item.topic}
               </span>

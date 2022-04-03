@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* QA Cards  */
 .hide {
     font-weight: 100;
     outline: 1px solid rgb(50, 72, 145);
@@ -19,10 +20,34 @@
     z-index: 101;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .hide {
         display: none;
+    }
 
+    .accordion-item button {
+        font-size: 14px !important;
     }
 
 }
+
+/* QA Cards  */
+
+/* Navabar */
+.bg-nav {
+    background-color: #ff9d3a;
+}
+
+.nav-bar {
+    padding: 10px 0;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .nav-bar button {
+        font-size: 14px;
+    }
+}
+
+/* Navabar */
