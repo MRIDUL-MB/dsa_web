@@ -79,7 +79,7 @@ public:
   },
   {
     id: 3,
-    topic: ['Bit manipulation','April leetcode challange 1'],
+    topic: 'Bit manipulation, April leetcode challange 1',
     question: 'Reverse String',
     link: 'https://leetcode.com/problems/reverse-string/',
     sol: `class Solution {
@@ -134,6 +134,33 @@ public:
   },
   {
     id: 5,
+    topic: ['Backtracking','April leetcode challange 3'],
+    question: 'Next Permutation',
+    link: 'https://leetcode.com/problems/next-permutation/',
+    sol: `class Solution {
+        public:
+            void nextPermutation(vector<int>& a) {
+                int i,j;
+                for(i=a.size()-2;i>=0;i--){
+                    if(a[i]<a[i+1])
+                        break;
+                }
+                if(i<0) reverse(a.begin(),a.end());
+                else{
+                    for(j=a.size()-1;j>i;j--)
+                {
+                    if(a[j]>a[i]){
+                        swap(a[j],a[i]);
+                        reverse(a.begin()+i+1,a.end());
+                        break;
+                    }
+                } 
+                }
+            }
+        };`,
+  },
+  {
+    id: 6,
     topic: ['Backtracking'],
     question: 'Subsets',
     link: 'https://leetcode.com/problems/subsets/',
