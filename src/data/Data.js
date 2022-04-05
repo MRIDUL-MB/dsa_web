@@ -161,6 +161,25 @@ public:
   },
   {
     id: 6,
+    topic: ['Two Pointers','April leetcode challange 4'],
+    question: 'Container With Most Water',
+    link: 'https://leetcode.com/problems/container-with-most-water/',
+    sol: `class Solution {
+        public:
+            int maxArea(vector<int>& h) {
+                int l=0,r=h.size()-1;
+               int area=0;
+                while(l<r){
+                    area = max(area,(r-l) * min(h[l],h[r]));
+                    if(h[l]<=h[r]) l++;
+                    else r--;
+                }
+                return area;
+            }
+        };`,
+  },
+  {
+    id: 7,
     topic: ['Backtracking'],
     question: 'Subsets',
     link: 'https://leetcode.com/problems/subsets/',
