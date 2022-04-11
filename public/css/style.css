@@ -21,6 +21,10 @@
 }
 
 @media screen and (max-width: 700px) {
+    .container {
+        margin-top: 3rem;
+    }
+
     .hide {
         display: none;
     }
@@ -33,7 +37,13 @@
 
 /* QA Cards  */
 
-/* Navabar */
+/* Navbar */
+@media screen and (max-width: 700px) {
+    nav {
+        display: none;
+    }
+}
+
 .bg-nav {
     background-color: #ff9d3a;
 }
@@ -44,10 +54,86 @@
 
 
 
-@media screen and (max-width: 700px) {
-    .nav-bar button {
-        font-size: 14px;
+
+/* Navbar */
+
+/* Sidebar --> Mobile First Approach*/
+@media screen and (min-width: 700px) {
+    .sidebar ul {
+        padding-top: 5rem;
+        padding-left: 1rem;
     }
 }
 
-/* Navabar */
+.sidebar {
+    height: 100vh;
+    width: 220px;
+    background: #ff9d3a;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: -220px;
+    transition: all 0.4s;
+}
+
+#check {
+    display: none;
+
+}
+
+label #open,
+label #close {
+    position: absolute;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+label #open {
+    top: 15px;
+    left: 12px;
+    z-index: 10;
+
+}
+
+label #close {
+    color: white;
+    top: 14px;
+    left: -190px;
+    z-index: 12;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+#check:checked~label #close {
+    left: 190px;
+    opacity: 1;
+}
+
+.sidebar Header {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 6px 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.sidebar ul li .btn {
+    width: 160px;
+}
+
+
+
+/* Sidebar --> Mobile First Approach*/
