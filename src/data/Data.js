@@ -101,7 +101,7 @@ public:
   },
   {
     id: 4,
-    topic: ['Two pointer', 'April leetcode challange 2'],
+    topic: ['Two pointer','April leetcode challange 2'],
     question: 'Valid Palindrome II',
     link: 'https://leetcode.com/problems/valid-palindrome-ii/',
     sol: `class Solution {
