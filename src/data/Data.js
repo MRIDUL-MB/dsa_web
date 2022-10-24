@@ -245,6 +245,27 @@ public:
             }
         }`,
     },
+    {
+        id: 9,
+        topic: ['Greedy'],
+        question: 'Shortest Impossible Sequence of Rolls',
+        link: 'https://leetcode.com/problems/shortest-impossible-sequence-of-rolls/description/',
+        sol: `class Solution {
+        public:
+        int shortestSequence(vector<int>& rolls, int k) {
+        int pl=0;
+        set<int> nums;
+        for(int r : rolls) {
+            nums.insert(r);
+            if(nums.size()==k) {
+                pl++;
+                nums.clear();
+            }
+        }
+        return pl+1;
+    }
+};`,
+    }
 
 
 
