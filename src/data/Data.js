@@ -2,6 +2,7 @@ export const Data = [
   {
     id: 0,
     topic: ['array'],
+    tag:['DSA','Medium'],
     question: 'Two Sum',
     link: 'https://leetcode.com/problems/two-sum/',
     sol: `class Solution {
