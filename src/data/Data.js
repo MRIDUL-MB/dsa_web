@@ -181,4 +181,42 @@ public:
          }
     };`,
   },
+    
+  {
+    id: 7,
+    topic: ['Array','Greedy','Two pointer'],
+    question: 'Container With Most Water',
+    link: 'https://leetcode.com/problems/container-with-most-water/',
+    sol: `class Solution {
+        public:
+            int maxArea(vector<int>& height) {
+
+                int maxArea = 0;
+
+                int n = height.size();
+                int p1 = 0;
+                int p2 = n-1;
+
+                while(p1<p2){
+
+                    int temp_area = min(height[p1],height[p2]) * abs(p1-p2);
+                    maxArea = max(maxArea, temp_area);
+
+
+                    if(height[p1]<=height[p2]){
+                        p1++;
+                    }
+                    else if(height[p1]>height[p2]){
+                        p2--;
+                    }
+
+                }
+
+                return maxArea;
+            }
+        };`,
+      },
+    
+    
+    
 ];
