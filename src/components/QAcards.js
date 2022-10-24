@@ -15,12 +15,12 @@ export default function QAcards({ data }) {
       {data.map((item, index) => {
 
         let itemComp = null;
-        if(item.tag){
-          itemComp = item.tag.map((element,index)=>{
-            return(<div key={index} style={{display:"flex",alignItems:"center",height:"2rem",border:"1px solid green",borderRadius:"0.4rem 0.4rem 0.4rem 0.4rem",paddingLeft:"0.5rem",paddingRight:"0.5rem",marginRight:"0.3rem"}}>{element}</div>)
+        if (item.topic) {
+          itemComp = item.topic.map((element, index) => {
+            return (<div key={index} className="item-topic" >{element}</div>)
           })
         }
-        
+
 
         return (
           <Accordion.Item eventKey={item.id} key={item.id}>
@@ -28,9 +28,9 @@ export default function QAcards({ data }) {
               {`${index + 1} ${item.question}`}
               {/* <span className='badge bg-info position-absolute'>
                 {item.topic}
-              </span> */}    
-              <section className = "tags position-absolute link" style={{height:"3rem",marginRight:"3rem",display:"flex",flexDirection:"row",justifyContent:"center",alignItems:"center"}}>
-              {itemComp}
+              </span> */}
+              <section className="tags position-absolute link tags-section" >
+                {itemComp}
               </section>
               <a
                 className='position-absolute link'

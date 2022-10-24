@@ -1,11 +1,10 @@
 export const Data = [
-  {
-    id: 0,
-    topic: ['array'],
-    tag:['DSA','Medium'],
-    question: 'Two Sum',
-    link: 'https://leetcode.com/problems/two-sum/',
-    sol: `class Solution {
+    {
+        id: 0,
+        topic: ['array'],
+        question: 'Two Sum',
+        link: 'https://leetcode.com/problems/two-sum/',
+        sol: `class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         int n = nums.size();
@@ -21,13 +20,13 @@ public:
         
     }
 };`,
-  },
-  {
-    id: 1,
-    topic: ['array'],
-    question: 'Spiral Matrix',
-    link: 'https://leetcode.com/problems/spiral-matrix/',
-    sol: `class Solution {
+    },
+    {
+        id: 1,
+        topic: ['array'],
+        question: 'Spiral Matrix',
+        link: 'https://leetcode.com/problems/spiral-matrix/',
+        sol: `class Solution {
         public:
             vector<int> spiralOrder(vector<vector<int>>& matrix) {
                 int startrow=0;
@@ -62,13 +61,13 @@ public:
                 return res;
             }
         };`,
-  },
-  {
-    id: 2,
-    topic: ['Bit manipulation'],
-    question: 'Power of Two',
-    link: 'https://leetcode.com/problems/power-of-two/',
-    sol: `class Solution {
+    },
+    {
+        id: 2,
+        topic: ['Bit manipulation'],
+        question: 'Power of Two',
+        link: 'https://leetcode.com/problems/power-of-two/',
+        sol: `class Solution {
         public:
             bool isPowerOfTwo(int n) {
                 if(n<=0) return false;
@@ -77,13 +76,13 @@ public:
                 return true;
             }
         };`,
-  },
-  {
-    id: 3,
-    topic: ['Bit manipulation, April leetcode challange 1'],
-    question: 'Reverse String',
-    link: 'https://leetcode.com/problems/reverse-string/',
-    sol: `class Solution {
+    },
+    {
+        id: 3,
+        topic: ['Bit manipulation'],
+        question: 'Reverse String',
+        link: 'https://leetcode.com/problems/reverse-string/',
+        sol: `class Solution {
         public:
             void reverseString(vector<char>& arr) {
                 int s=0;
@@ -99,13 +98,13 @@ public:
                 }
             }
         };`,
-  },
-  {
-    id: 4,
-    topic: ['Two pointer','April leetcode challange 2'],
-    question: 'Valid Palindrome II',
-    link: 'https://leetcode.com/problems/valid-palindrome-ii/',
-    sol: `class Solution {
+    },
+    {
+        id: 4,
+        topic: ['Two pointer'],
+        question: 'Valid Palindrome II',
+        link: 'https://leetcode.com/problems/valid-palindrome-ii/',
+        sol: `class Solution {
         public:
             bool ispalindrome(string st,int s,int e){
                 while(s<e){
@@ -132,13 +131,13 @@ public:
                 return true;
             }
         };`,
-  },
-  {
-    id: 5,
-    topic: ['Backtracking'],
-    question: 'Subsets',
-    link: 'https://leetcode.com/problems/subsets/',
-    sol: `class Solution {
+    },
+    {
+        id: 5,
+        topic: ['Backtracking'],
+        question: 'Subsets',
+        link: 'https://leetcode.com/problems/subsets/',
+        sol: `class Solution {
         public:
             void subs(int start,vector<int> nums,vector<vector<int>> &res,vector<int> &temp){
                 res.push_back(temp);
@@ -155,13 +154,13 @@ public:
                 return res; 
             }
         };`,
-  },
-  {
-    id: 6,
-    topic: ['Switch and Case'],
-    question: 'Roman to Integer',
-    link: 'https://leetcode.com/problems/roman-to-integer/',
-    sol: `class Solution {
+    },
+    {
+        id: 6,
+        topic: ['Switch and Case'],
+        question: 'Roman to Integer',
+        link: 'https://leetcode.com/problems/roman-to-integer/',
+        sol: `class Solution {
         public:
             int romanToInt(string S) {
               int ans = 0, num = 0;
@@ -181,14 +180,14 @@ public:
             return ans;        
          }
     };`,
-  },
-    
-  {
-    id: 7,
-    topic: ['Array','Greedy','Two pointer'],
-    question: 'Container With Most Water',
-    link: 'https://leetcode.com/problems/container-with-most-water/',
-    sol: `class Solution {
+    },
+
+    {
+        id: 7,
+        topic: ['Array', 'Greedy', 'Two pointer'],
+        question: 'Container With Most Water',
+        link: 'https://leetcode.com/problems/container-with-most-water/',
+        sol: `class Solution {
         public:
             int maxArea(vector<int>& height) {
 
@@ -216,8 +215,8 @@ public:
                 return maxArea;
             }
         };`,
-      },
-    
-    
-    
+    },
+
+
+
 ];

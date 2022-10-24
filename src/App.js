@@ -3,6 +3,7 @@ import QAcards from './components/QAcards';
 import Sidebar from './components/Sidebar';
 import { Data } from './data/Data';
 import { useEffect, useState } from 'react';
+import "./App.css";
 
 function App() {
   const [filters, setFilter] = useState('all');
