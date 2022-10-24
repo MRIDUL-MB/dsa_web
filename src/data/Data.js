@@ -216,6 +216,35 @@ public:
             }
         };`,
     },
+    {
+        id: 8,
+        topic: ['Array', 'dp', 'memoization'],
+        question: 'Jump Game II',
+        link: 'https://leetcode.com/problems/jump-game-ii/',
+        sol: `class Solution {
+    
+            public int jumps(int[] nums,int n,int[]dp){
+                if(n == nums.length-1) return 0; 
+                if(n>=nums.length) return (int)1e9;
+                
+                int min = (int)1e5;
+                
+                if(dp[n] != -1) return dp[n];
+                
+                for(int i = 1;i<=nums[n];i++){
+                    min =  Math.min(min,jumps(nums,n+i,dp)+1);
+                    
+                }
+                return dp[n] = min;
+            }
+            
+            public int jump(int[] nums) {
+                int dp[] = new int[nums.length];
+                Arrays.fill(dp,-1);
+                return jumps(nums,0,dp);
+            }
+        }`,
+    },
 
 
 
