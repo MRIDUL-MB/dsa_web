@@ -265,7 +265,30 @@ public:
         return pl+1;
     }
 };`,
+    },
+    {
+        id: 10,
+        topic: ['Linked List'],
+        question: 'Linked List Cycle',
+        link: 'https://leetcode.com/problems/linked-list-cycle/',
+        sol: `class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+        if(head==NULL) return false;
+        ListNode * fast =head;
+        ListNode * slow = head;
+       while(fast!=NULL and fast->next!=NULL)
+        {
+            fast= fast->next->next;
+            slow = slow->next;
+            
+            if(fast==slow)
+                return true;
+        }
+        return false;
     }
+};`,
+    },
 
 
 
