@@ -25,7 +25,8 @@ export default function QAcards({ data }) {
         return (
           <Accordion.Item eventKey={item.id} key={item.id}>
             <Accordion.Header className='qa-card'>
-              {`${index + 1} ${item.question}`}
+              <div className='question-name'> {`${index + 1} ${item.question}`} </div>
+
               {/* <span className='badge bg-info position-absolute'>
                 {item.topic}
               </span> */}
